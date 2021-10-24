@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 10px 20px;
+}
+
+p {
+    color: blue;
+    margin: .5em 0;
+    font-size: 2em;
+}
