@@ -96,8 +96,6 @@ for (let i = 0; i < thirdArray.length; i++) {
 
     console.log(newString);
 
-
-
     const thirdList = document.querySelector('.array');
     // Don't edit the code below here!
 
@@ -112,4 +110,18 @@ for (let i = 0; i < thirdArray.length; i++) {
     thirdList.appendChild(line4);
     thirdList.appendChild(line5);
 
+}
+
+let nextString = thirdArray.join('-');
+console.log(nextString);
+
+
+//  sorting
+
+const points = [40, 100, 1, 5, 78, 25, 119, 10];
+document.getElementById("demo").innerHTML = points;  
+
+function myFunction() {
+  points.sort(function(a, b){return a - b});
+  document.getElementById("demo").innerHTML = points;
 }
