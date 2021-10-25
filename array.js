@@ -118,10 +118,35 @@ console.log(nextString);
 
 //  sorting
 
-const points = [40, 100, 1, 5, 78, 25, 119, 10];
+// Automatic on button click
+
+const points = [40, 100, 1, 5, 8, 22, 91, 78, 25, 119, 10];
 document.getElementById("demo").innerHTML = points;  
 
 function myFunction() {
   points.sort(function(a, b){return a - b});
   document.getElementById("demo").innerHTML = points;
 }
+
+// Manual with Javascript
+
+let counts = [85, 40, 27, 150, 100, 1, 5, 8, 120, 72, 78, 25, 276, 119, 10];
+
+let sortedCounts = counts.sort(function(a, b){return a - b});
+
+
+const sorting = document.querySelector('.array');
+
+sorting.innerHTML = '';
+
+let newLine = document.createElement('p');
+newLine.textContent = sortedCounts;
+
+let heading = document.createElement('h3');
+heading.innerHTML = 'Numbers sorted manually';
+
+
+sorting.appendChild(heading);
+sorting.appendChild(newLine);
+
+
